@@ -254,10 +254,11 @@ nav .nav-content .nav-links:hover {
     nav .nav-bar1 .header {
         left: 10px;
     }
-
+    nav .nav-bar1 .header .nav-img{
+        margin-left: 0.5rem;
+    }
     nav .nav-bar1 .header .nav-img img {
         height: 40px;
-        margin-left: 1.5rem;
         width: auto;
     }
 
@@ -269,9 +270,9 @@ nav .nav-content .nav-links:hover {
 /* welcome section */
 .welcome {
     background-color: #0077ff;
-    width: 95%;
+    width: 100%;
     height: auto;
-    padding: 2rem;
+    padding: 1rem;
     padding-top: 0rem;
     padding-bottom: 0.5rem;
 }
@@ -291,6 +292,11 @@ nav .nav-content .nav-links:hover {
 .welcome .container .item2 {
     margin: auto;
     width: 40%;
+}
+.welcome .container .item2 img{
+    margin: auto;
+    width: 90%;
+    max-height: 500px;
 }
 .welcome .container .item .btn {
     width: auto;
@@ -313,7 +319,7 @@ nav .nav-content .nav-links:hover {
 }
 
 .welcome .container .item #head {
-    font-size: 76px;
+    font-size: 60px;
 }
 
 .welcome .container .item #text2 {
@@ -434,7 +440,7 @@ nav .nav-content .nav-links:hover {
         margin: 0.2rem;
         border-radius: 30px;
         background-color: white;
-        font-size: 20px;
+        font-size: 18px;
         border: 0px;
         transition: 0.3s;
     }
@@ -461,7 +467,7 @@ nav .nav-content .nav-links:hover {
         }
 
         .welcome .container .item #head {
-            font-size: 35px;
+            font-size: 32px;
         }
 
         .welcome .container .item #text2 {
@@ -469,11 +475,11 @@ nav .nav-content .nav-links:hover {
         }
 
         .welcome .container .item .btn {
-            padding: 0.2rem 1rem 0.2rem 1rem;
+            padding: 0.5rem 1rem 0.5rem 1rem;
             margin: 0.2rem;
             border-radius: 30px;
             background-color: white;
-            font-size: 20px;
+            font-size: 16px;
             border: 0px;
             transition: 0.3s;
         }
@@ -492,8 +498,8 @@ nav .nav-content .nav-links:hover {
 
     /* About Us Section */
     .about-us {
-        padding: 2rem;
-
+        padding: 1rem;
+        width: 100%;
     }
 
     .about-us .container {
@@ -506,7 +512,7 @@ nav .nav-content .nav-links:hover {
 
     .about-us .container .item1 {
         margin: auto;
-        width: 95%;
+        width: 100%;
     }
 
     .about-us .container .item1 .btn {
@@ -537,19 +543,10 @@ nav .nav-content .nav-links:hover {
     .about-us .container .item1 #text2 {
         font-size: 50px;
     }
-
-    .about-us .container .item12 img {
-        max-width: 500px;
-        animation: rl-slide infinite ease-in-out 6s;
-    }
-
-    .about-us .container .item1 p {
-        font-size: 1.2rem;
-    }
-
     .about-us .container .item1 .content {
         margin: 0;
-        padding: 1rem;
+        display: flex;
+        flex-direction: row;
         justify-content: flex-start;
         padding-bottom: 0rem;
     }
@@ -557,17 +554,30 @@ nav .nav-content .nav-links:hover {
     .about-us .container .item1 .content .sub-container {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     .about-us .container .item1 .content .sub-container .sub-items1 {
-        margin-left: 2rem;
-        width: 48%;
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: self-start;
+        flex-wrap: wrap;
     }
-
-
-
+    .about-us .container .item1 .content .sub-container .sub-items1 img{
+        width: 48%;
+        margin: 3px;
+    }
+    .about-us .container .item1 .content .sub-container .sub-items2{
+        width: 60%;
+        height: auto;
+    }
+    .about-us .container .item1 .content .sub-container .sub-items2 p{
+        font-size: 1.2rem;
+    }
     @keyframes ud-slide {
         0% {
             transform: translateY(0%);
@@ -582,43 +592,24 @@ nav .nav-content .nav-links:hover {
         }
     }
 
-    .about-us .container .item1 .content .sub-container .sub-items .c-content .items {
-        height: auto;
-        align-items: center;
-    }
-
-    .about-us .container .item1 .content .sub-container .sub-items .c-content .items p {
-        font-size: 14px;
-    }
-
     @media screen and (max-width:1040px) {
         .about-us .container .item1 #text1 {
-            font-size: 30px;
+            font-size: 26px;
         }
 
         .about-us .container .item1 #head {
-            font-size: 56px;
+            font-size: 36px;
         }
-
-        .about-us .container .item1 #text2 {
-            font-size: 40px;
+        .about-us .container .item1 .content .sub-container .sub-items2 p {
+            font-size: 14px;
         }
     }
-
-    /* about us section */
 
     @media screen and (max-width:840px) {
         .about-us .container .item1 {
             margin: auto;
             width: 100%;
         }
-
-        .about-us .container .item12 #imgg {
-            width: 300px;
-            height: auto;
-            animation: rl-slide infinite ease-in-out 6s;
-        }
-
         .about-us .container .item1 #text1 {
             font-size: 20px;
         }
@@ -627,18 +618,23 @@ nav .nav-content .nav-links:hover {
             font-size: 28px;
         }
 
-        .about-us .container .item1 p {
-            font-size: 14px;
+        .about-us .container .item1 .content .sub-container .sub-items2 p {
+            font-size: 12px;
         }
-
-        .about-us .container .item1 .content .sub-container .sub-items .c-content .img #imgg {
-            padding: 5px;
-            width: 80px;
-            height: 80px;
+        .about-us .container .item1 .content .sub-container .sub-items1{
+            width: 45%;
+        }
+        .about-us .container .item1 .content .sub-container .sub-items1 img{
+            width: 48%;
+            margin: 3px;
+        }
+        .about-us .container .item1 .content .sub-container .sub-items2{
+            width: 55%;
+            height: auto;
         }
     }
 
-    @media (max-width:640px) {
+    @media (max-width:680px) {
         .about-us .container .item1 #text1 {
             font-size: 16px;
         }
@@ -660,37 +656,37 @@ nav .nav-content .nav-links:hover {
             border: 0px;
             transition: 0.3s;
         }
-
-        .about-us .container .item1 .content .sub-container .sub-items1 {
-            margin-left: 2rem;
+        .about-us .container .item1 .content .sub-container .sub-items1{
+            width: 95%;
         }
-
-        .about-us .container .item1 .content .sub-container .sub-items .c-content .items {
+        .about-us .container .item1 .content .sub-container .sub-items1 img{
+            width: 35%;
+            margin: 2px;
+        }
+        .about-us .container .item1 .content .sub-container .sub-items2{
+            width: 100%;
             height: auto;
         }
-
-        .about-us .container .item1 .content .sub-container .sub-items .c-content .items p {
-            font-size: 11px;
-        }
-
-        .about-us .container .item1 .content .sub-container .sub-items .c-content .imgg {
-            align-items: center;
-            justify-content: center;
-            height: auto;
-        }
-
-        .about-us .container .item1 .content .sub-container .sub-items .c-content .img #imgg {
-            width: 50px;
-            height: 60px;
+        .about-us .container .item1 .content .sub-container .sub-items2 p {
+            font-size: 14px;
         }
 
     }
+    @media (max-width:480px){
+        .about-us .container .item1 .content .sub-container .sub-items1 img{
+            width: 45%;
+            margin: 2px;
+        }
+        .about-us .container .item1 .content .sub-container .sub-items2 p {
+            font-size: 12px;
+        }
 
+    }
     /* Footer Section */
     #footer {
         background-color: #0077ff;
         margin-top: 20px;
-        padding: 2rem;
+        padding: 1rem;
         color: black;
     }
 
@@ -746,10 +742,12 @@ nav .nav-content .nav-links:hover {
     #footer .f-container #contact {
         width: 300px;
     }
-
+    #footer .f-container #contact address a{
+        color: black;
+    }
     #footer .f-container .f-items .fi-head {
         font-size: 14px;
-        border-left: 3px solid #CAC0B3;
+        border-left: 3px solid #000000;
         padding-left: 10px;
     }
 
@@ -809,11 +807,15 @@ nav .nav-content .nav-links:hover {
 
     @media (max-width:640px) {
         .f-container {
-            justify-content: center;
+            justify-content:flex-start;
             margin: auto;
         }
 
         .f-items {
             margin-left: 1rem;
+            width: 100%;
+        }
+        #footer .f-container #contact {
+            width: auto;
         }
     }
