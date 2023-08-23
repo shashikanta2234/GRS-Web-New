@@ -320,6 +320,7 @@ nav .nav-content .nav-links:hover {
 
 .welcome .container .item #head {
     font-size: 60px;
+    color: #ffffff;
 }
 
 .welcome .container .item #text2 {
@@ -428,6 +429,7 @@ nav .nav-content .nav-links:hover {
 
     .welcome .container .item #head {
         font-size: 40px;
+        
     }
 
     .welcome .container .item #text2 {
@@ -571,6 +573,18 @@ nav .nav-content .nav-links:hover {
         width: 48%;
         margin: 3px;
     }
+    .about-us .container .item1 .content .sub-container .sub-items1 .img1{
+        border-radius: 0rem 2rem 0rem 2rem;
+    }
+    .about-us .container .item1 .content .sub-container .sub-items1 .img2{
+        border-radius: 2rem 0rem 2rem 0rem;
+    }
+    .about-us .container .item1 .content .sub-container .sub-items1 .img3{
+        border-radius: 2rem 0rem 2rem 0rem;
+    }
+    .about-us .container .item1 .content .sub-container .sub-items1 .img4{
+        border-radius: 0rem 2rem 0rem 2rem;
+    }
     .about-us .container .item1 .content .sub-container .sub-items2{
         width: 60%;
         height: auto;
@@ -578,6 +592,7 @@ nav .nav-content .nav-links:hover {
     }
     .about-us .container .item1 .content .sub-container .sub-items2 p{
         font-size: 1.2rem;
+        padding-right: 2rem;
     }
     @keyframes ud-slide {
         0% {
@@ -621,6 +636,7 @@ nav .nav-content .nav-links:hover {
 
         .about-us .container .item1 .content .sub-container .sub-items2 p {
             font-size: 12px;
+            padding-right: 1.5rem;
         }
         .about-us .container .item1 .content .sub-container .sub-items1{
             width: 45%;
@@ -646,6 +662,7 @@ nav .nav-content .nav-links:hover {
 
         .about-us .container .item1 p {
             font-size: 14px;
+            padding-right: 1rem;
         }
 
         .about-us .container .item1 .btn {
@@ -683,9 +700,28 @@ nav .nav-content .nav-links:hover {
         }
         .about-us .container .item1 .content .sub-container .sub-items2 p {
             font-size: 12px;
+            padding-right: 0.5rem;
         }
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* Footer Section */
     #footer {
         background-color: #0077ff;
