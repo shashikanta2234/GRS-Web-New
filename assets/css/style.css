@@ -539,13 +539,13 @@ nav .nav-content .nav-links:hover {
     .about-us .container .item1 .content .sub-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
     }
 
     .about-us .container .item1 .content .sub-container .sub-items1 {
-        width: 40%;
+        width: 35%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -575,7 +575,7 @@ nav .nav-content .nav-links:hover {
     }
     .about-us .container .item1 .content .sub-container .sub-items2 p{
         font-size: 1.2rem;
-        padding-right: 2rem;
+        padding: 0.5rem;
     }
     @keyframes ud-slide {
         0% {
@@ -678,7 +678,7 @@ nav .nav-content .nav-links:hover {
 
     }
 
-    
+
 /* Events Section */
 .events {
     padding: 1rem;
