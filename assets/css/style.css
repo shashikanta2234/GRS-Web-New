@@ -516,23 +516,6 @@ nav .nav-content .nav-links:hover {
         margin: auto;
         width: 100%;
     }
-
-    .about-us .container .item1 .btn {
-        width: auto;
-        padding: 0.5rem 2rem 0.5rem 2rem;
-        margin: 0.2rem;
-        border-radius: 30px;
-        background-color: white;
-        font-size: 24px;
-        border: 0px;
-        transition: 0.3s;
-    }
-
-    .about-us .container .item1 .btn:hover {
-        background-color: white;
-        box-shadow: 0px 0px 10px black;
-    }
-
     .about-us .container .item1 #text1 {
         color: #40128B;
         font-size: 24px;
@@ -664,16 +647,6 @@ nav .nav-content .nav-links:hover {
             font-size: 14px;
             padding-right: 1rem;
         }
-
-        .about-us .container .item1 .btn {
-            padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-            margin: 0.2rem;
-            border-radius: 30px;
-            background-color: white;
-            font-size: 18px;
-            border: 0px;
-            transition: 0.3s;
-        }
         .about-us .container .item1 .content .sub-container .sub-items1{
             width: 95%;
         }
@@ -705,6 +678,92 @@ nav .nav-content .nav-links:hover {
 
     }
 
+    
+/* Events Section */
+.events {
+    padding: 1rem;
+    width: 100%;
+}
+
+.events .container {
+    width: 100%;
+}
+
+.events .container .item1 {
+    margin: auto;
+    width: 100%;
+    
+}
+.events .container .item1 #text1 {
+    color: #40128B;
+    font-size: 24px;
+}
+
+.events .container .item1 #head {
+    font-size: 40px;
+}
+
+.events .container .item1 #text2 {
+    font-size: 50px;
+}
+
+@keyframes ud-slide {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .events .container .item1 #text1 {
+        font-size: 26px;
+    }
+
+    .events .container .item1 #head {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .events .container .item1 {
+        margin: auto;
+        width: 100%;
+    }
+    .events .container .item1 #text1 {
+        font-size: 20px;
+    }
+
+    .events .container .item1 #head {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:680px) {
+    .events .container .item1 #text1 {
+        font-size: 16px;
+    }
+
+    .events .container .item1 #head {
+        font-size: 24px;
+    }
+}
+@media (max-width:480px){
+    .events .container .item1 .content .sub-container {
+        max-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
 
 
 
