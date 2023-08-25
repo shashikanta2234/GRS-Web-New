@@ -40,3 +40,34 @@ $(document).ready(function () {
     },
   });
 });
+
+/* Events slider */
+
+$(document).ready(function () {
+  $("#owl-carousel").owlCarousel({
+    loop: true,
+    items:5,
+    center:true,
+    margin:5,
+    autoplay:2000,
+    pagination:true,
+    mergeFit:true,
+    rewind:true,
+    autoplayHoverPause:true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      500: {
+        items: 2,
+      },
+      680: {
+        items: 3,
+      },
+      840: {
+        items: 4,
+      },
+    },
+  });
+});
