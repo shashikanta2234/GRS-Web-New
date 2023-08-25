@@ -681,7 +681,6 @@ nav .nav-content .nav-links:hover {
 /* activities Section */
 .activities {
     background: linear-gradient(to bottom, white,#0077ff);
-    padding: 1rem;
     width: 100%;
 }
 
@@ -772,7 +771,6 @@ nav .nav-content .nav-links:hover {
 /* events Section */
 .events {
     background: linear-gradient(to bottom,#0077ff, white);
-    padding: 1rem;
     width: 100%;
 }
 
