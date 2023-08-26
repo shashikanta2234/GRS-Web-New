@@ -13,38 +13,7 @@ nav_content.addEventListener("mouseout", () => showNavbar());
 /* Slider */
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    items:5,
-    center:true,
-    margin:5,
-    autoplay:2000,
-    pagination:true,
-    mergeFit:true,
-    rewind:true,
-    autoplayHoverPause:true,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      500: {
-        items: 2,
-      },
-      680: {
-        items: 3,
-      },
-      840: {
-        items: 5,
-      },
-    },
-  });
-});
-
-/* Events slider */
-
-$(document).ready(function () {
-  $("#owl-carousel").owlCarousel({
+  $("#owl-carousel1").owlCarousel({
     loop: true,
     items:5,
     center:true,
@@ -67,6 +36,75 @@ $(document).ready(function () {
       },
       840: {
         items: 4,
+      },
+    },
+  });
+});
+
+/* Events slider */
+
+$(document).ready(function () {
+  $("#owl-carousel2").owlCarousel({
+    loop: true,
+    items:5,
+    center:true,
+    margin:5,
+    autoplay:2000,
+    pagination:true,
+    mergeFit:true,
+    rewind:true,
+    autoplayHoverPause:true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      480: {
+        items: 2,
+      },
+      680: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+      1199:{
+        items:5,
+      }
+    },
+  });
+});
+
+
+/* Sponsors slider */
+
+/* Slider */
+
+$(document).ready(function () {
+  $("#owl-carousel12").owlCarousel({
+    loop: true,
+    items:7,
+    center:true,
+    margin:5,
+    autoplay:2000,
+    pagination:true,
+    mergeFit:true,
+    rewind:true,
+    autoplayHoverPause:true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+
+      400: {
+        items: 2,
+      },
+      500: {
+        items: 4,
+      },
+      680: {
+        items: 7,
       },
     },
   });
