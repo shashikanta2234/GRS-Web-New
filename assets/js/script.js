@@ -108,11 +108,14 @@ $(document).ready(function () {
         items: 2,
       },
       500: {
-        items: 4,
+        items: 3,
       },
       680: {
-        items: 7,
+        items: 5,
       },
+      1000: {
+        items:6,
     },
+  }
   });
 });
