@@ -816,7 +816,7 @@ nav .nav-content .nav-links:hover {
     background: 0.5;
     overflow: hidden;
 }
-.events .owl-carousel .owl-item div .e-item .details{
+.events .owl-carousel .owl-item div .e-item .e-details{
     height: 100%;
     margin-bottom: 0px;
     background-color: white;
@@ -832,17 +832,17 @@ nav .nav-content .nav-links:hover {
     100%{opacity: 1;visibility: visible;}
     
 }
-.events .owl-carousel .owl-item div .e-item .details .e-name{
+.events .owl-carousel .owl-item div .e-item .e-details .e-name{
     font-size: 24px;
     font-weight: bold;
     
 }
-.events .owl-carousel .owl-item div .e-item .details img{
+.events .owl-carousel .owl-item div .e-item .e-details img{
     height: auto;
     border-top-right-radius:10px ;
     border-bottom-left-radius: 10px;
 }
-.events .owl-carousel .owl-item div .e-item .details .e-date{
+.events .owl-carousel .owl-item div .e-item .e-details .e-date{
     font-size: 10px;
     opacity: 0.8;
 }
@@ -854,17 +854,20 @@ nav .nav-content .nav-links:hover {
     border-radius: 10px;
     height: auto;
 }
-.events .owl-carousel .center div .e-item .details{
+.events .owl-carousel .center div .e-item .e-details{
     position: relative;
     border-radius: 10px;
     top: 0px;
     opacity: 1;
 }
-.events .owl-carousel .center:hover div .e-item .details{
+.events .owl-carousel .center:hover div .e-item .e-details{
     position: relative;
     border-radius: 10px;
     top: 0px;
     opacity: 0;
+}
+.op-1{
+    opacity: 1 !important;
 }
 @keyframes ud-slide {
     0% {
@@ -911,16 +914,6 @@ nav .nav-content .nav-links:hover {
 
     .events .container .item1 #head {
         font-size: 24px;
-    }
-}
-@media (max-width:480px){
-    .events .container .item1 .content .sub-container {
-        max-height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        flex-wrap: wrap;
     }
 }
 
