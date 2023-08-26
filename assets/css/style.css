@@ -804,6 +804,9 @@ nav .nav-content .nav-links:hover {
     align-items: center;
     padding: 5px;
 }
+.events .owl-carousel .owl-item{
+    margin: 5px;
+}
 .events .owl-carousel .owl-item div .e-item{
     height: 380px;
     border-radius: 10px;
@@ -835,7 +838,7 @@ nav .nav-content .nav-links:hover {
     
 }
 .events .owl-carousel .owl-item div .e-item .details img{
-    height: 150px;
+    height: auto;
     border-top-right-radius:10px ;
     border-bottom-left-radius: 10px;
 }

@@ -59,8 +59,8 @@ $(document).ready(function () {
       0: {
         items: 1,
       },
-      480: {
-        items: 2,
+      400: {
+        items: 1.2,
       },
       680: {
         items: 3,
