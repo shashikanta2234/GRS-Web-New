@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Poppins&display=swap');
 
 html {
     width: 100%;
@@ -7,7 +8,8 @@ html {
 
 body {
     background-color: white;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Nunito', sans-serif;
     color: black;
     width: 100%;
     padding: 0;
@@ -101,6 +103,14 @@ nav .nav-content .nav-links:hover {
     font-weight: 200;
     box-shadow: 0px 0px 10px #ffffff;
 }
+.clicked{
+    animation: click ease-in-out 0.2s;
+}
+@keyframes click {
+    0% {transform: scale(1)}
+    50% {transform: scale(0.8)}
+    100%{transform: scale(1);}
+}
 
 .nav-btn {
     display: none;
@@ -120,7 +130,7 @@ nav .nav-content .nav-links:hover {
     nav .nav-content {
         width: 100%;
         height: 100vh;
-        background-color: black;
+        background-color:#0077ff;
         position: absolute;
         top: 0;
         right: 0;
@@ -179,7 +189,7 @@ nav .nav-content .nav-links:hover {
 
     .active .nav-content {
         display: flex;
-        animation: n-slide 0.3s ease-in-out;
+        animation: n-slide 0.4s ease-in-out;
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -527,12 +537,9 @@ nav .nav-content .nav-links:hover {
     .about-us .container .item1 #head {
         font-size: 40px;
     }
-
-    .about-us .container .item1 #text2 {
-        font-size: 50px;
-    }
     .about-us .container .item1 .content {
         margin: 0;
+        margin-top: 1rem;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -622,7 +629,7 @@ nav .nav-content .nav-links:hover {
 
         .about-us .container .item1 .content .sub-container .sub-items2 p {
             font-size: 12px;
-            padding-right: 1.5rem;
+            padding-right: 1rem;
         }
         .about-us .container .item1 .content .sub-container .sub-items1{
             width: 45%;
@@ -639,16 +646,11 @@ nav .nav-content .nav-links:hover {
 
     @media (max-width:680px) {
         .about-us .container .item1 #text1 {
-            font-size: 16px;
+            font-size: 18px;
         }
 
         .about-us .container .item1 #head {
             font-size: 24px;
-        }
-
-        .about-us .container .item1 p {
-            font-size: 14px;
-            padding-right: 1rem;
         }
         .about-us .container .item1 .content .sub-container .sub-items1{
             width: 95%;
@@ -658,11 +660,12 @@ nav .nav-content .nav-links:hover {
             margin: 2px;
         }
         .about-us .container .item1 .content .sub-container .sub-items2{
-            width: 100%;
+            width: 90%;
             height: auto;
         }
         .about-us .container .item1 .content .sub-container .sub-items2 p {
             font-size: 14px;
+            margin: auto;
         }
 
     }
@@ -684,12 +687,13 @@ nav .nav-content .nav-links:hover {
 
 /* activities Section */
 .activities {
-    background: linear-gradient(to bottom, white,#0077ff);
+    background-color: #ffffff;
     width: 100%;
 }
 
 .activities .container {
     width: 100%;
+    padding-bottom: 1rem;
 }
 
 .activities .container .item1 {
@@ -774,8 +778,10 @@ nav .nav-content .nav-links:hover {
 
 /* events Section */
 .events {
-    background-color: #0077ff;
+    background:linear-gradient(to bottom,white,#0077ff,white);
     width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .events .container {
@@ -799,6 +805,9 @@ nav .nav-content .nav-links:hover {
 
 .events .container .item1 #text2 {
     font-size: 50px;
+}
+.events .owl-carousel{
+    margin: auto;
 }
 .events .owl-carousel .owl-stage{
     display: flex;
@@ -835,16 +844,15 @@ nav .nav-content .nav-links:hover {
 }
 .events .owl-carousel .owl-item div .e-item .e-details .e-name{
     font-size: 24px;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 .events .owl-carousel .owl-item div .e-item .e-details img{
-    height: auto;
+    height: 200px;
     border-top-right-radius:10px ;
     border-bottom-left-radius: 10px;
 }
 .events .owl-carousel .owl-item div .e-item .e-details .e-date{
-    font-size: 10px;
+    font-size: 12px;
     opacity: 0.8;
 }
 .events .owl-carousel .owl-item div .e-item p{
@@ -853,7 +861,7 @@ nav .nav-content .nav-links:hover {
 }
 .events .owl-carousel .center div .e-item{
     border-radius: 10px;
-    height: auto;
+    height: 480px;
 }
 .events .owl-carousel .center div .e-item .e-details{
     position: relative;
@@ -916,14 +924,28 @@ nav .nav-content .nav-links:hover {
     .events .container .item1 #head {
         font-size: 24px;
     }
+    .events .owl-carousel .owl-item div .e-item .e-details img{
+        height: 250px;
+        border-top-right-radius:10px ;
+        border-bottom-left-radius: 10px;
+    }
+}
+@media (max-width:600px) {
+    .events .owl-carousel .owl-item div .e-item .e-details img{
+        height: 250px;
+        border-top-right-radius:10px ;
+        border-bottom-left-radius: 10px;
+    }
 }
 
 
 
 /* sponsors Section */
 .sponsors {
-    background: linear-gradient(to bottom,#0077ff, white);
+    background-color: white;
     width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .sponsors .container {

@@ -34,16 +34,22 @@ $(document).ready(function () {
     responsiveClass: true,
     responsive: {
       0: {
-        items: 1,
+        items: 1.1,
       },
       500: {
+        items: 1.5,
+      },
+      600:{
         items: 2,
       },
       680: {
         items: 3,
       },
       840: {
-        items: 4,
+        items: 4.5,
+      },
+      1000: {
+        items: 5,
       },
     },
   });
@@ -65,12 +71,15 @@ $(document).ready(function () {
     responsiveClass: true,
     responsive: {
       0: {
-        items: 1,
-      },
-      400: {
         items: 1.2,
       },
-      680: {
+      500: {
+        items: 1.5,
+      },
+      600:{
+        items:2,
+      },
+      640: {
         items: 3,
       },
       1000: {
