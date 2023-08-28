@@ -15,6 +15,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+
 }
 
 body p {
@@ -44,7 +45,11 @@ nav {
     justify-content: space-between;
     overflow-x: hidden;
 }
-
+header .nav-bottom-border{
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg,#0077ff,#ffffff,#ffffff,#ffffff,#0077ff)
+}
 nav a {
     text-decoration: none;
     color: black;
@@ -130,7 +135,7 @@ nav .nav-content .nav-links:hover {
     nav .nav-content {
         width: 100%;
         height: 100vh;
-        background-color:#0077ff;
+        background-color:black;
         position: absolute;
         top: 0;
         right: 0;
@@ -515,6 +520,11 @@ nav .nav-content .nav-links:hover {
     .about-us {
         padding: 1rem;
         width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
     }
 
     .about-us .container {
@@ -937,9 +947,6 @@ nav .nav-content .nav-links:hover {
         border-bottom-left-radius: 10px;
     }
 }
-
-
-
 /* sponsors Section */
 .sponsors {
     background-color: white;
@@ -950,7 +957,6 @@ nav .nav-content .nav-links:hover {
 
 .sponsors .container {
     width: 100%;
-    margin-bottom: 2rem;
 }
 
 .sponsors .container .item1 {
@@ -1056,7 +1062,6 @@ nav .nav-content .nav-links:hover {
     /* Footer Section */
     #footer {
         background:linear-gradient(to bottom, white,#0077ff);
-        margin-top: 20px;
         padding: 1rem;
         color: black;
     }

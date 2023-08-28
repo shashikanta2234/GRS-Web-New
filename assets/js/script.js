@@ -58,7 +58,7 @@ $(document).ready(function () {
 /* Events slider */
 
 $(document).ready(function () {
-  $("#owl-carousel2").owlCarousel({
+  $(".owl-carousel2").owlCarousel({
     loop: true,
     items: 5,
     center: true,
