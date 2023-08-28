@@ -91,9 +91,9 @@
 }
 .team .owl-carousel .owl-item{
     margin: 5px;
+    height: auto;
 }
 .team .owl-carousel .owl-item div .t-item{
-    height: 380px;
     border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +134,6 @@
 }
 .team .owl-carousel .center div .t-item{
     border-radius: 10px;
-    height: 380px;
 }
 .team .owl-carousel .center div .t-item .t-details{
     position: relative;
