@@ -26,6 +26,7 @@
 .page-intro .container .desc{
     font-size: 28px;
     text-align: center;
+    color: antiquewhite;
 }
 @media (max-width:500px) {
     .page-intro{
@@ -91,7 +92,9 @@
 }
 .team .owl-carousel .owl-item{
     margin: 5px;
-    height: auto;
+    height: 390px;
+    border-radius: 10px;
+    background-color: white;
 }
 .team .owl-carousel .owl-item div .t-item{
     border-radius: 10px;
@@ -102,9 +105,9 @@
     overflow: hidden;
 }
 .team .owl-carousel .owl-item div .t-item .t-details{
-    height: 100%;
+    height: 390px;
+    border-radius: 10px;
     margin-bottom: 0px;
-    background-color: white;
     padding: 0.5rem;
     transition-duration: 0.5s;
     animation-duration: 0.3s;
