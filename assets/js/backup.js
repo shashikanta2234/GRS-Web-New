@@ -1,18 +1,17 @@
 /* Nav menu */
 const nav_class = document.querySelector(".nav");
-const drop = document.querySelector(".dropdown");
+const drop = document.querySelector("drop-content");
 const showNavbar = () => {
   nav_class.classList.toggle("active");
-  drop.classList.remove("active");
 };
 const dropdown = () => {
-  drop.classList.toggle("active");
+  dropdown.classList.toggle("active");
 };
 const mobile_nav = document.querySelector(".nav-btn");
 mobile_nav.addEventListener("click", () => showNavbar());
 
-// const nav_content = document.querySelector(".navbar");
-// nav_content.addEventListener("click", () => showNavbar());
+const nav_content = document.querySelector(".nav-content");
+nav_content.addEventListener("mouseout", () => showNavbar());
 
 function hide() {
   var abc = document.querySelector(".e-details");
