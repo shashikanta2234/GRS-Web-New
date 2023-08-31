@@ -617,16 +617,16 @@ nav .nav-bar1 .header {
     .about-us .container .item1 .content .sub-container {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;
     }
 
     .about-us .container .item1 .content .sub-container .sub-items1 {
-        width: 35%;
+        width: 30%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
         position: relative;
@@ -650,7 +650,7 @@ nav .nav-bar1 .header {
         border-radius: 0rem 2rem 0rem 2rem;
     }
     .about-us .container .item1 .content .sub-container .sub-items2{
-        width: 62%;
+        width: 60%;
         height: auto;
         text-align: start;
     }
@@ -707,8 +707,8 @@ nav .nav-bar1 .header {
         }
         .about-us .container .item1 .content .sub-container .sub-items1{
             position: relative;
-            top: 20px;
-            width: 45%;
+            top: 50px;
+            width: 40%;
             height: max-content;
         }
         .about-us .container .item1 .content .sub-container .sub-items1 img{
@@ -716,7 +716,7 @@ nav .nav-bar1 .header {
             margin: 3px;
         }
         .about-us .container .item1 .content .sub-container .sub-items2{
-            width: 55%;
+            width: 45%;
             padding-top: 1rem;
             height:max-content;
         }
@@ -731,15 +731,14 @@ nav .nav-bar1 .header {
             font-size: 24px;
         }
         .about-us .container .item1 .content .sub-container .sub-items1{
-            width: 100%;
-            margin: auto;
+            width: 90%;
         }
         .about-us .container .item1 .content .sub-container .sub-items1 img{
             width: 35%;
             margin: 2px;
         }
         .about-us .container .item1 .content .sub-container .sub-items2{
-            width: 100%;
+            width: 90%;
             margin-top: 1.5rem;
             padding-right: 1rem;
             height: auto;
@@ -752,7 +751,7 @@ nav .nav-bar1 .header {
     }
     @media (max-width:480px){
         .about-us .container .item1 .content .sub-container .sub-items1 img{
-            width: 45%;
+            width: 40%;
             margin: 2px;
         }
         .about-us .container .item1 .content .sub-container .sub-items2{
