@@ -5,11 +5,12 @@
 /* team Section */
 .page-intro{
     width: 100%;
-    height: 400px;
-    background-position:center;
+    height: 300px;
+    background-position:bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: soft-light;
+    box-shadow: 0px 100px 100px #0077ff inset;
+    background-attachment: fixed;
 }
 .page-intro .container{
     width: 100%;
@@ -17,21 +18,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    box-shadow: 0px 100px 100px #0077ff inset;
+    align-items: center;
+    
 }
 
 .page-intro .container .page-name{
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-align: center;
 }
 .page-intro .container .desc{
+    font-size: 28px;
     text-align: center;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
+    color: black;
 }
 @media (max-width:500px) {
     .page-intro{
@@ -61,10 +61,6 @@
         font-size: 22px;
     }
 }
-
-
-
-
 .team {
     background:linear-gradient(to bottom,white,#0077ff,white);
     width: 100%;
@@ -91,26 +87,33 @@
     font-size: 36px;
 }
 
-.team .t-container{
-    margin: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+.team .owl-carousel{
+    margin: auto;
 }
-.team .t-container div .t-item{
-    background-color: white;
-    height: 430px;;
-    width:300px;
-    margin: 2px;
+.team .owl-carousel .owl-stage{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.team .owl-carousel .owl-item{
+    margin: 5px;
+    height: 390px;
     border-radius: 10px;
+    background-color: white;
+}
+.team .owl-carousel .owl-item div .t-item{
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: 0.5;
     overflow: hidden;
 }
-.team .t-container div .t-item .t-details{
-    width: 100%;
-    height: 100%;
+.team .owl-carousel .owl-item div .t-item .t-details{
+    height: 390px;
     border-radius: 10px;
     margin-bottom: 0px;
+    padding: 0.5rem;
     transition-duration: 0.5s;
     animation-duration: 0.3s;
     text-align: center;
@@ -121,24 +124,32 @@
     100%{opacity: 1;visibility: visible;}
     
 }
-.team .t-container div .t-item .t-details .t-name{
+.team .owl-carousel .owl-item div .t-item .t-details .t-name{
     font-size: 24px;
     font-weight: bold;  
 }
-.team .t-container div .t-item .t-details img{
-    width: calc((100% - 1rem));
-    margin: 0.5rem;
+.team .owl-carousel .owl-item div .t-item .t-details img{
+    width: 100%;
     border-radius: 10px;
 }
-.team .t-container div .t-item .t-details .post{
+.team .owl-carousel .owl-item div .t-item .t-details .post{
     font-size: 1rem;
     opacity: 0.8;
 }
-.team .t-container div .t-item p{
+.team .owl-carousel .owl-item div .t-item p{
     text-align: justify;
     font-size: 14px;
 }
-.team .t-container div .t-item .t-details .social {
+.team .owl-carousel .center div .t-item{
+    border-radius: 10px;
+}
+.team .owl-carousel .center div .t-item .t-details{
+    position: relative;
+    border-radius: 10px;
+    top: 0px;
+    opacity: 1;
+}
+.team .owl-carousel .owl-item div .t-item .t-details .social {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -146,7 +157,7 @@
     border-radius: 20px;
 }
 
-.team .t-container div .t-item .t-details .social .s-icons {
+.team .owl-carousel .owl-item div .t-item .t-details .social .s-icons {
     height: 25px;
     width: 25px;
     border-radius: 50%;
@@ -154,7 +165,7 @@
     transition: 0.3s;
 }
 
-.team .t-container div .t-item .t-details .social .s-icons:hover {
+.team .owl-carousel .owl-item div .t-item .t-details .social .s-icons:hover {
     box-shadow: 0px 0px 10px black;
     opacity: 0.5;
 }
@@ -183,6 +194,8 @@
 
     .team .container .item1 #head {
         font-size: 26px;
+    }.team .owl-carousel .owl-item div .t-item{
+        height:auto;
     }
 }
 
