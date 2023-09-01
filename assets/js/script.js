@@ -43,14 +43,15 @@ $(document).ready(function () {
       500: {
         items: 1.5,
       },
-      600:{
-        items: 2,
-      },
+     
       680: {
-        items: 3,
+        items:2,
+      },
+      700: {
+        items:3,
       },
       840: {
-        items: 4.5,
+        items: 4,
       },
       1000: {
         items: 5,
