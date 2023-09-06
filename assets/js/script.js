@@ -65,7 +65,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".owl-carousel2").owlCarousel({
     loop: true,
-    items: 5,
+    items:5,
     center: true,
     margin: 5,
     autoplay: 2000,
